@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">MetaQR</string>
+    <string name="settings_instructions">Enter a QR code above and hit Save to store it. To use it, add the app under the Watch Apps menu in MetaWatch Community Edition or Noah Edition’s Preferences.</string>
+    <string name="settings_qr_details">For examples of some things you can encode in QR codes that common scanners will recognize, see the <a href="https://code.google.com/p/zxing/wiki/BarcodeContents">ZXing wiki</a>. This will scale best with Version 2 QR codes. V1 codes can be hard to scan due to the lack of an alignment pattern, and due to the watch’s low-resolution display you may have a hard time scanning V3 or higher codes. Version 2 QR codes can hold 39-74 numeric characters, 24-45 alphanumeric (0–9, A–Z upper-case only, space, $, %, *, +, -, ., /, :) or 17-31 characters if you use any other letters or symbols.</string>
+    <string name="settings_toast_saved">Data saved.</string>
+    <string name="save">Save</string>
+    <string name="settings_input_hint">Enter text to encode as QR.</string>
+    <string name="attributions">Attributions</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yonisamlan.android.metaqr"
+    android:versionCode="1000000"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yonisamlan.android.metaqr.QrSettingsActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonisamlan.android.metaqr.AttributionsActivity"
+            android:exported="false"
+            android:parentActivityName="com.yonisamlan.android.metaqr.QrSettingsActivity" />
+
+        <receiver
+            android:name=".IntentReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="org.metawatch.manager.APPLICATION_DISCOVERY" />
+                <action android:name="org.metawatch.manager.APPLICATION_ACTIVATE" />
+                <action android:name="org.metawatch.manager.APPLICATION_DEACTIVATE" />
+                <action android:name="org.metawatch.manager.BUTTON_PRESS" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
